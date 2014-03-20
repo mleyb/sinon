@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Facebook login button -->
+    <dimen name="com_facebook_loginview_padding_left">42dp</dimen>
+    <dimen name="com_facebook_loginview_padding_right">0dp</dimen>
+    <dimen name="com_facebook_loginview_padding_top">0dp</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">0dp</dimen>
+    <dimen name="com_facebook_loginview_width">205dp</dimen>
+    <dimen name="com_facebook_loginview_height">44dp</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    
+    <!-- Google login button -->
+    <dimen name="google_signin_button_padding_left">100dp</dimen>
+    <dimen name="google_signin_button_padding_right">0dp</dimen>
+    <dimen name="google_signin_button_padding_top">0dp</dimen>
+    <dimen name="google_signin_button_padding_bottom">0dp</dimen>
+    <dimen name="google_signin_button_width">205dp</dimen>
+    <dimen name="google_signin_button_height">44dp</dimen>
+    <dimen name="google_signin_button_text_size">16.0sp</dimen>
+    
+</resources>

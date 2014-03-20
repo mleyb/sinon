@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+            android:title="Notifications">
+
+        <CheckBoxPreference
+                android:key="enableNotifications"
+                android:title="Receive Notifications"
+                android:summary="Select to enable notifications"
+                android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Analytics">
+
+        <CheckBoxPreference
+			android:key="enableGoogleAnalytics"
+			android:title="Google Analytics"
+			android:summary="Select to enable Google Analytics"
+			android:defaultValue="true" />
+
+	</PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Application">
+
+        <Preference
+                android:key="rateApplication"
+                android:summary="Rate the app in the store"
+                android:title="Rate the app"/>
+
+        <Preference
+                android:key="shareApplication"
+                android:summary="Share the app with your friends"
+                android:title="Share it"/>
+
+        <Preference
+                android:key="applicationFeedback"
+                android:summary="Send us your feedback"
+                android:title="Send feedback"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

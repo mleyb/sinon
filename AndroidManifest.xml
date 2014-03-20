@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluezero.sinon"
+    android:versionCode="25"
+    android:versionName="1.2.5"
+    android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17" />    
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    
+    <permission android:name="com.bluezero.sinon.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <permission android:name="com.bluezero.sinon.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.bluezero.sinon.permission.MAPS_RECEIVE"/>
+	<uses-permission android:name="com.bluezero.sinon.permission.C2D_MESSAGE" /> 
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+    <application
+        android:name="SinonApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.bluezero.sinon.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bluezero.sinon.NewSightingActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name="com.bluezero.sinon.PreferencesActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name="com.bluezero.sinon.MapViewerActivity" android:configChanges="keyboardHidden|orientation" android:screenOrientation="landscape"/>
+
+        <receiver
+                android:name="com.bluezero.sinon.GCMBroadcastReceiver"
+                android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.bluezero.sinon" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.bluezero.sinon.GeofenceTransitionIntentService" android:label="@string/app_name" android:exported="false"/>
+
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCaodXBeIQtMoBjD1TPU_-Vjpv4suBmVcA"/>
+		
+    </application>
+    
+</manifest>

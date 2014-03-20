@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trammy Dodger</string>
+	<string name="app_copyright">Das Urheberrecht liegt bei 2013 Blau Null</string>    
+    
+	<string name="yes">Ja</string>
+    <string name="no">Nein</string>
+	
+    <string name="title_sightings">Sichtungen</string>    
+	<string name="title_todays_sightings">Sichtungen Heute</string>        	
+    <string name="title_new_sighting">Neue Sichtung</string>
+	<string name="title_report_new_sighting">Melden eine neue Sichtung</string>
+	
+    <string name="action_refresh">Aktualisieren</string>
+    <string name="action_new">Neu</string>
+    <string name="action_network">Netzwerk</string>
+    <string name="action_map">Karte</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Über</string>
+    <string name="action_signout">Austragen</string>
+    
+    <string name="button_sign_in_with_facebook">Anmeldung mit <b>Facebook</b></string>
+	<string name="button_sign_in_with_google">Anmeldung mit <b>Google</b></string>
+	<string name="button_sign_in_with_windows">Anmeldung mit <b>Windows</b></string>
+	<string name="button_sign_in_with_twitter">Anmeldung mit <b>Twitter</b></string>
+    	
+	<string name="dialog_whats_new">Was ist neu</string>
+	<string name="dialog_sign_in">Bitte melden Sie sich</string>
+	<string name="dialog_select_network">Wählen Sie Netzwerk</string>
+	<string name="dialog_sign_out">Ausloggen</string>
+	<string name="dialog_sign_out_message">Sind sie sicher?</string>
+	
+	<string name="progress_updating_sightings">Aktualisieren neuesten Sichtungen</string>
+	<string name="progress_retrieving_networks">Suchen Netzwerke</string>
+	<string name="progress_retrieving_stations">Suchen Stationen</string>
+	<string name="progress_saving_location">Speicherort</string>
+	<string name="progress_sighting_recorded">Sichtung aufgezeichnet!</string>
+		
+	<string name="notification_new_sighting">Neue Beobachtungen aufgezeichnet!</string>
+
+    <string name="toast_no_data_connection">Keine datenverbindung.</string>
+	<string name="toast_sign_in_error">Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.</string>
+	<string name="toast_general_error">Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.</string>
+    
+</resources>
